@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="shuffle.js"></script>
+    <title>Card Shuffler</title>
+</head>
+<body>
+    <h1>Shuffle Simulator 3000</h1>
+    <div>
+        Please select the number of players: 
+        <select id="ddlPlayers"></select>
+    </div>
+    <div>
+        <br />
+        <button id="btnDeal" onclick="dealHands()">Deal Hands</button>
+    </div>
+    <div>
+        <p id="lblNumberOfPlayers"></p>
+    </div>            
+    <div>
+        <p id="lblNumberOfCards"></p>
+    </div>        
+    <div>
+        <!-- TODO - Players hand will go here -->
+        <p id="lblCardBefore"></p>
+    </div>
+    <div>
+        <!-- TODO - Players hand will go here -->
+        <p id="lblCardAfter"></p>
+    </div>    
+</body>
+</html>
