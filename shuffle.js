@@ -3,6 +3,14 @@ let players = [];
 const suits = ["♣", "♦", "♥", "♠"];
 const values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
+function dealHands() {
+    createDeck();
+    shuffle();
+    createPlayers();
+    deal();
+    renderHands();
+}
+
 function createDeck() {
     deck = [];
     suits.forEach(suit => {
@@ -10,14 +18,6 @@ function createDeck() {
             deck.push(new card(suit, value));
         });
     });
-}
-
-function dealHands() {
-    createDeck();
-    shuffle();
-    createPlayers();
-    deal();
-    renderHands();
 }
 
 function shuffle() {
